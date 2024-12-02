@@ -25,9 +25,34 @@
         <header>
             <h1>LDL</h1>
         </header>
+
+        <div class="calculation-form">
+            <h2>Ingrese los datos para el cálculo</h2>
+            <form id="calculationForm">
+                <label for="colTotal">Colesterol total:</label>
+                <input type="number" id="colTotal" name="colTotal" required>
+                
+                <label for="trigli">Trigliceridos:</label>
+                <input type="number" id="trigli" name="trigli" required>
+                
+                <label for="HDL">HDL:</label>
+                <input type="number" id="HDL" name="HDL" required>
+                
+                <div class="form-buttons">
+                    <button type="submit">Calcular</button>
+                    <button type="button" id="clearButton">Limpiar</button>
+                </div>
+            </form>
+            <div id="result">
+                <h3>Resultado:</h3>
+                <p id="resultValue">Esperando datos...</p>
+            </div>
+        </div>
+        
     </div>
 
     <!-- enlace al js -->
     <script src="/js/calculadoras.js"></script>
+    <script src="/js/ldl.js"></script>
 </body>
 </html>

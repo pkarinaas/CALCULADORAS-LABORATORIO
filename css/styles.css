@@ -54,6 +54,56 @@ header {
     text-align: center;
 }
 
+/* Estilos para los formularios */
+.calculation-form {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos del formulario estén en columnas */
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.calculation-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.calculation-form input {
+    width: 100px; /* Ajusta el ancho del campo */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right; /* Alinea el texto a la derecha para valores numéricos */
+}
+/* Contenedor de los botones */
+.form-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Espaciado entre botones */
+    margin-top: 15px; /* Separación del último campo de entrada */
+}
+.calculation-form button {
+    background-color: #2faa75;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculation-form button:hover {
+    background-color: #1abc9c;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}   
+
+
 /* Responsivo: pantallas menores a 768px (tabletas y móviles) */
 @media (max-width: 768px) {
     body {
@@ -88,6 +138,7 @@ header {
         padding: 10px;
     }
 }
+
 
 /* Responsivo: pantallas menores a 480px (móviles pequeños) */
 @media (max-width: 480px) {

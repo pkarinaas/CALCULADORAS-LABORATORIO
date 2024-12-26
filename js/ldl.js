@@ -1,5 +1,5 @@
 // Seleccionar elementos del DOM el formulario, el contenedor del resultado y el botón de limpiar
-const calculationForm = document.getElementById('calculationForm');
+const calculationFormLdl = document.getElementById('calculationFormLdl');
 const resultValue = document.getElementById('resultValue');
 const clearButton = document.getElementById('clearButton');
 

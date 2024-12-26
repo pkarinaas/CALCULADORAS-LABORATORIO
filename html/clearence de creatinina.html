@@ -26,9 +26,36 @@
         <header>
             <h1>CLEARENCE DE CREATININA</h1>
         </header>
+
+        <div class="calculation-form">
+            <h2>Ingrese los datos para el cálculo</h2>
+            <form id="calculationFormClCr">
+                <label for="creaUr">Creatinina Urinaria (mg/dL):</label>
+                <input type="number" id="creaUr" name="creaUr" 
+                required title="Ingrese un número positivo, utilice un punto para separar decimales." min="0" step="0.01">
+                
+                <label for="creaPl">Creatinina Plasmática (mg/dL):</label>
+                <input type="number" id="creaPl" name="creaPl" 
+                required title="Ingrese un número positivo, utilice un punto para separar decimales." min="0" step="0.01">
+                
+                <label for="diuresis">Diuresis (mL/24hs):</label>
+                <input type="number" id="diuresis" name="diuresis" 
+                required title="Ingrese un número entero positivo." min="0">
+                
+                <div class="form-buttons">
+                    <button type="submit">Calcular</button>
+                    <button type="button" id="clearButton">Limpiar</button>
+                </div>
+            </form>
+            <div id="result">
+                <h3>Resultado:</h3>
+                <p id="resultValue">Esperando datos...</p>
+            </div>
+        </div>
     </div>
 
     <!-- enlace al js -->
     <script src="../js/calculadoras.js"></script>
+    <script src="../js/clearence de creatinina.js"></script>
 </body>
 </html>

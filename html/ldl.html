@@ -30,14 +30,14 @@
         <div class="calculation-form">
             <h2>Ingrese los datos para el cálculo</h2>
             <form id="calculationForm">
-                <label for="colTotal">Colesterol total:</label>
-                <input type="number" id="colTotal" name="colTotal" required>
+                <label for="colTotal">Colesterol total (mg/dL):</label>
+                <input type="number" id="colTotal" name="colTotal" required title="Ingrese un número entero positivo." min="0">
                 
-                <label for="trigli">Trigliceridos:</label>
-                <input type="number" id="trigli" name="trigli" required>
+                <label for="trigli">Trigliceridos (mg/dL):</label>
+                <input type="number" id="trigli" name="trigli" required title="Ingrese un número entero positivo." min="0">
                 
-                <label for="HDL">HDL:</label>
-                <input type="number" id="HDL" name="HDL" required>
+                <label for="HDL">HDL (mg/dL):</label>
+                <input type="number" id="HDL" name="HDL" required title="Ingrese un número entero positivo." min="0">
                 
                 <div class="form-buttons">
                     <button type="submit">Calcular</button>

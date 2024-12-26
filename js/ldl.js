@@ -87,7 +87,7 @@ calculationForm.addEventListener('submit', (event) => {
     const LDL = colTotal - (trigli / fact) - HDL;
 
     // Mostrar el resultado en la página
-    resultValue.textContent = `LDL= ${LDL.toFixed(2)}`;
+    resultValue.textContent = `LDL (mg/dL)= ${LDL.toFixed(2)}`;
 
     // Cambiar el estado a "cálculo realizado"
     calculationDone = true;

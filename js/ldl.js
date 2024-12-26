@@ -7,7 +7,7 @@ const clearButton = document.getElementById('clearButton');
 let calculationDone = false;
 
 // Función para manejar el envío del formulario
-calculationForm.addEventListener('submit', (event) => {
+calculationFormLdl.addEventListener('submit', (event) => {
     event.preventDefault(); // Evitar el envío estándar del formulario
 
     // Si el cálculo ya se realizó, activamos el botón "Limpiar"
@@ -98,7 +98,7 @@ clearButton.addEventListener('click', clearForm);
 
 // Función para limpiar el formulario y reiniciar el estado
 function clearForm() {
-    calculationForm.reset(); // Resetear los valores del formulario
+    calculationFormLdl.reset(); // Resetear los valores del formulario
     resultValue.textContent = 'Esperando datos...'; // Restablecer el resultado
     calculationDone = false; // Reiniciar el estado
     document.getElementById('colTotal').focus();
